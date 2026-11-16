@@ -13,7 +13,14 @@ type ChartOptions = echarts.ComposeOption<LineSeriesOption | DataZoomComponentOp
 const datasets = import.meta.glob<{default: Series[]}>('../data/*.json', {eager:true});
 const published: DisplaySeries[] = Object.values(datasets).flatMap(m=>m.default).map((s,i)=>({...s,origin:'published',color:PALETTE[i%PALETTE.length]}));
 let temporary: DisplaySeries[] = [];
-let selected = new Set(CLASSIC);
+function savedSelection(): Set<string> {
+  try {
+    const saved:unknown=JSON.parse(localStorage.getItem('versionmark:series')??'null');
+    if(Array.isArray(saved) && saved.every(id=>typeof id==='string')) return new Set(saved);
+  } catch { /* Storage may be unavailable in private sessions. */ }
+  return new Set(CLASSIC);
+}
+let selected = savedSelection();
 let range: {start:number;end:number} = {start:0,end:100};
 const app = document.querySelector('#app')!;
 app.innerHTML = `<header><a href="${REPO_URL}">↗ GitHub</a><h1>Versionmark Timeline</h1><p>纵轴为版本号，仅供整活。</p></header>
@@ -48,17 +55,19 @@ function options(lines:DisplaySeries[], exported=false): ChartOptions {
   return {
     backgroundColor:'#fff', animation:false, useUTC:true,
     title:exported?{text:'Versionmark Timeline',subtext:'纵轴为版本号，仅供整活',left:'center',top:15}:undefined,
-    legend:{type:'plain',top:exported?70:12, left:16,right:16,selectedMode:false},
+    legend:{type:'plain',top:exported?70:12,left:16,right:16,selectedMode:false,
+      formatter:id=>displayName(lines.find(s=>s.id===id)!)},
     grid:{top:(exported?111:54)+Math.ceil(lines.length/(exported?6:4))*22,left:64,right:exported?220:chartNode.clientWidth<600?78:154,bottom:72+footer},
     tooltip:{trigger:'item',renderMode:'richText',formatter:(raw)=>{
       const p=raw as unknown as {seriesName:string;data:[number,number,string]};
-      return `${p.seriesName}\n${p.data[2]} · ${new Date(p.data[0]).toISOString().slice(0,10)}`;
+      const series=lines.find(s=>s.id===p.seriesName);
+      return `${series?displayName(series):''}\n${p.data[2]} · ${new Date(p.data[0]).toISOString().slice(0,10)}`;
     }},
     xAxis:{type:'time',boundaryGap:['2%','3%']},
     yAxis:{type:'value',scale:true, name:'版本号 / 编号',...{breaks,breakArea:{expandOnClick:false}}},
     dataZoom:[{type:'inside',...range},{type:'slider',show:!exported,bottom:12,...range}],
     graphic:exported?notes.map((text,i)=>({type:'text',left:24,bottom:19+(notes.length-i-1)*23,style:{text,fill:'#465655',font:'14px sans-serif'}})):[],
-    series:lines.map(s=>({id:s.id,name:displayName(s),type:'line',color:s.color,showSymbol:true,symbolSize:5,clip:false,
+    series:lines.map(s=>({id:s.id,name:s.id,type:'line',color:s.color,showSymbol:true,symbolSize:5,clip:true,
       lineStyle:{type:s.metric==='week'||s.id==='ios'?'dashed':'solid'},
       endLabel:{show:true,color:s.color,backgroundColor:'#fff',padding:[3,5],borderColor:s.color,borderWidth:1,borderRadius:3,
         formatter:(p)=>`${displayName(s)} ${(p.value as [number,number,string])[2]}`},
@@ -68,6 +77,8 @@ function options(lines:DisplaySeries[], exported=false): ChartOptions {
 }
 function draw(){
   const lines=visible();
+  try { localStorage.setItem('versionmark:series',JSON.stringify(published.filter(s=>selected.has(s.id)).map(s=>s.id))); }
+  catch { /* The chart works without persistent storage. */ }
   chart.setOption(options(lines),true);
   get('foot').innerHTML=`${lines.some(s=>s.metric==='week')?esc(snapshotNote)+'<br>':''}${marked(lines)?esc(DISCLAIMER)+'<br>':''}${branding()?`<a href="${REPO_URL}">${BRANDING}</a>`:''}`;
 }
