@@ -1,0 +1,31 @@
+name: 投稿时间线
+description: 提交 CSV 和可核实来源
+title: "[数据投稿] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 曲线名称
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 建议分类
+      options: [AI, 游戏, 操作系统, 硬件]
+    validations:
+      required: true
+  - type: textarea
+    id: attachment
+    attributes:
+      label: CSV 附件
+      description: 将 CSV 拖到这里。第一列为日期，第二列为版本。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 来源
+      description: 提供官方 HTTPS 链接并说明覆盖范围。
+    validations:
+      required: true

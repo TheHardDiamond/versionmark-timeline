@@ -1,0 +1,18 @@
+{
+  "name": "versionmark-timeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test tests/*.test.ts",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "import:csv": "tsx scripts/import-csv.ts",
+    "import:issue": "tsx scripts/import-issue.ts"
+  },
+  "dependencies": { "echarts": "^6.0.0", "papaparse": "^5.5.3" },
+  "devDependencies": { "@types/node": "^24.0.0", "@types/papaparse": "^5.3.16", "tsx": "^4.20.0", "typescript": "^5.9.0", "vite": "^7.1.0" },
+  "engines": { "node": ">=22.12" }
+}

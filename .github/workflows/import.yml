@@ -1,0 +1,59 @@
+name: 导入数据投稿
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: 数据投稿 Issue 编号
+        required: true
+        type: string
+permissions:
+  contents: write
+  issues: read
+  pull-requests: write
+concurrency:
+  group: timeline-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ inputs.issue }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: 生成数据 PR
+        shell: bash
+        run: |
+          digest="$(npm run --silent import:issue)"
+          npm run validate:data
+          branch="timeline/issue-$ISSUE_NUMBER"
+          file="data/issue-$ISSUE_NUMBER.json"
+          if git ls-files --error-unmatch "$file" >/dev/null 2>&1 && git diff --quiet -- "$file"; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          cp "$file" "$RUNNER_TEMP/submission.json"
+          git restore -- "$file" 2>/dev/null || rm -- "$file"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null; then
+            git fetch origin "$branch"
+            git switch -c "$branch" FETCH_HEAD
+          else
+            git switch -c "$branch"
+          fi
+          cp "$RUNNER_TEMP/submission.json" "$file"
+          git add -- "$file"
+          if ! git diff --cached --quiet; then
+            git commit -m "Import timeline data for issue #$ISSUE_NUMBER"
+            git push origin "$branch"
+          fi
+          if ! gh pr view "$branch" --json state --jq .state 2>/dev/null | grep -qx OPEN; then
+            printf 'Closes #%s\n\nCSV SHA-256: %s\n' "$ISSUE_NUMBER" "$digest" > "$RUNNER_TEMP/body.md"
+            gh pr create --base main --head "$branch" --title "导入数据投稿 #$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/body.md"
+          fi

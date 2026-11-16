@@ -1,0 +1,555 @@
+[
+  {
+    "id": "gpt",
+    "name": "GPT",
+    "category": "ai",
+    "metric": "version",
+    "description": "GPT 数字版本；4o 按 4 绘制，4.5 之后发布的 4.1 会下降。日期采用官方研究或产品公告日，不是模型训练完成日。",
+    "coverage": "精选已核实里程碑，2019-02-14 至 2026-09-29；未将初代未编号 GPT 补造为 1.0，不含 o 系列、Codex 专用版本和全部小型分支。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2019-02-14",
+        "version": "GPT-2",
+        "value": 2,
+        "source": "https://openai.com/index/better-language-models/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2020-05-28",
+        "version": "GPT-3",
+        "value": 3,
+        "source": "https://openai.com/index/language-models-are-few-shot-learners/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2022-11-30",
+        "version": "GPT-3.5 (ChatGPT preview)",
+        "value": 3.5,
+        "source": "https://openai.com/index/chatgpt/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2023-03-14",
+        "version": "GPT-4",
+        "value": 4,
+        "source": "https://openai.com/index/gpt-4/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-05-13",
+        "version": "GPT-4o",
+        "value": 4,
+        "source": "https://openai.com/index/hello-gpt-4o/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-02-27",
+        "version": "GPT-4.5",
+        "value": 4.5,
+        "source": "https://openai.com/index/introducing-gpt-4-5/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-04-14",
+        "version": "GPT-4.1",
+        "value": 4.1,
+        "source": "https://openai.com/index/gpt-4-1/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-08-07",
+        "version": "GPT-5",
+        "value": 5,
+        "source": "https://openai.com/index/introducing-gpt-5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-11-12",
+        "version": "GPT-5.1",
+        "value": 5.1,
+        "source": "https://openai.com/index/gpt-5-1/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-12-11",
+        "version": "GPT-5.2",
+        "value": 5.2,
+        "source": "https://openai.com/index/introducing-gpt-5-2/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-03-05",
+        "version": "GPT-5.4",
+        "value": 5.4,
+        "source": "https://openai.com/index/introducing-gpt-5-4/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-04-23",
+        "version": "GPT-5.5",
+        "value": 5.5,
+        "source": "https://openai.com/index/introducing-gpt-5-5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-07-09",
+        "version": "GPT-5.6",
+        "value": 5.6,
+        "source": "https://openai.com/index/gpt-5-6/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-03",
+        "version": "GPT-6 Astra",
+        "value": 6,
+        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-09-29",
+        "version": "GPT-6.1 Sol",
+        "value": 6.1,
+        "source": "https://deploymentsafety.openai.com/gpt-6-1-sol",
+        "releaseKind": "announcement"
+      }
+    ]
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "category": "ai",
+    "metric": "version",
+    "description": "Claude 家族数字编号；同一编号取已核实的最早家族公告，保留具体型号。不同子系列的编号可能交错，曲线不是能力前沿。",
+    "coverage": "精选已核实里程碑，2023-07-11 至 2026-11-09；未为最初未编号的 Claude 补造 1.0，未穷举 Instant、Haiku 等分支；日期按链接页面刊载日。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2023-07-11",
+        "version": "Claude 2",
+        "value": 2,
+        "source": "https://www.anthropic.com/news/claude-2",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2023-11-21",
+        "version": "Claude 2.1",
+        "value": 2.1,
+        "source": "https://www.anthropic.com/news/claude-2-1",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-03-04",
+        "version": "Claude 3",
+        "value": 3,
+        "source": "https://www.anthropic.com/news/claude-3-family",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-06-21",
+        "version": "Claude 3.5 Sonnet",
+        "value": 3.5,
+        "source": "https://www.anthropic.com/news/claude-3-5-sonnet",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-02-24",
+        "version": "Claude 3.7 Sonnet",
+        "value": 3.7,
+        "source": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-05-22",
+        "version": "Claude 4",
+        "value": 4,
+        "source": "https://www.anthropic.com/news/claude-4",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-08-05",
+        "version": "Claude Opus 4.1",
+        "value": 4.1,
+        "source": "https://www.anthropic.com/news/claude-opus-4-1",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-09-29",
+        "version": "Claude Sonnet 4.5",
+        "value": 4.5,
+        "source": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-02-05",
+        "version": "Claude Opus 4.6",
+        "value": 4.6,
+        "source": "https://www.anthropic.com/news/claude-opus-4-6",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-04-16",
+        "version": "Claude Opus 4.7",
+        "value": 4.7,
+        "source": "https://www.anthropic.com/news/claude-opus-4-7",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-05-28",
+        "version": "Claude Opus 4.8",
+        "value": 4.8,
+        "source": "https://www.anthropic.com/news/claude-opus-4-8",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-06-09",
+        "version": "Claude Fable / Mythos 5",
+        "value": 5,
+        "source": "https://www.anthropic.com/news/models",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-22",
+        "version": "Claude Opus 5.5",
+        "value": 5.5,
+        "source": "https://www.anthropic.com/claude-opus-5-5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-11-09",
+        "version": "Claude Fable / Mythos 5.2",
+        "value": 5.2,
+        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "releaseKind": "announcement"
+      }
+    ]
+  },
+  {
+    "id": "glm",
+    "name": "GLM",
+    "category": "ai",
+    "metric": "version",
+    "description": "GLM 通用模型编号；不把 130B、9B 等参数量当作版本号。首版以有明确官方日期的 4.5 及以后系列为主。",
+    "coverage": "已核实 2025-07-28 至 2026-08-18 的主次版本；ChatGLM2/3 和早期 GLM-4 的首次公告日尚待补充一手来源，未推测日期。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2025-07-28",
+        "version": "GLM-4.5",
+        "value": 4.5,
+        "source": "https://z.ai/blog/glm-4.5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-09-30",
+        "version": "GLM-4.6",
+        "value": 4.6,
+        "source": "https://z.ai/blog/glm-4.6",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-12-22",
+        "version": "GLM-4.7",
+        "value": 4.7,
+        "source": "https://docs.z.ai/release-notes/new-released",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-02-12",
+        "version": "GLM-5",
+        "value": 5,
+        "source": "https://z.ai/blog/glm-5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-04-07",
+        "version": "GLM-5.1",
+        "value": 5.1,
+        "source": "https://docs.z.ai/release-notes/new-released",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-06-16",
+        "version": "GLM-5.2",
+        "value": 5.2,
+        "source": "https://z.ai/blog/glm-5.2",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-08-18",
+        "version": "GLM-5.3",
+        "value": 5.3,
+        "source": "https://docs.z.ai/release-notes/new-released",
+        "releaseKind": "announcement"
+      }
+    ]
+  },
+  {
+    "id": "grok",
+    "name": "Grok",
+    "category": "ai",
+    "metric": "version",
+    "description": "Grok 通用模型数字编号；日期取官方公告页，Beta 标明为预览。未混入 Imagine、Voice 和 Code Fast 等独立系列。",
+    "coverage": "精选官方可核实里程碑，2023-11-03 至 2026-09-21；未穷举 4.x 中间版本、Fast 变体和 API 更新日期。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2023-11-03",
+        "version": "Grok-1",
+        "value": 1,
+        "source": "https://x.ai/news/grok",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2024-03-28",
+        "version": "Grok-1.5",
+        "value": 1.5,
+        "source": "https://x.ai/news/grok-1.5",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2024-08-13",
+        "version": "Grok-2 Beta",
+        "value": 2,
+        "source": "https://x.ai/news/grok-2",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-02-19",
+        "version": "Grok 3 Beta",
+        "value": 3,
+        "source": "https://x.ai/news/grok-3",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-07-09",
+        "version": "Grok 4",
+        "value": 4,
+        "source": "https://x.ai/news/grok-4",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-11-17",
+        "version": "Grok 4.1",
+        "value": 4.1,
+        "source": "https://x.ai/news/grok-4-1",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-08-12",
+        "version": "Grok 4.6",
+        "value": 4.6,
+        "source": "https://x.ai/news/grok-4-6",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-21",
+        "version": "Grok 4.7",
+        "value": 4.7,
+        "source": "https://x.ai/news/grok-4-7",
+        "releaseKind": "announcement"
+      }
+    ]
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "category": "ai",
+    "metric": "version",
+    "description": "仅绘制 DeepSeek V 系列主次编号；R1 是不同产品线，不接成 V3 后的版本倒退。实验预览和正式发布分别标明。",
+    "coverage": "精选 2024-05-06 至 2026-09-10 的 V 系列；不把未编号的早期模型补造 V1，不穷举日期后缀更新、Lite 和参数规模。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2024-05-06",
+        "version": "DeepSeek-V2",
+        "value": 2,
+        "source": "https://github.com/deepseek-ai/DeepSeek-V2",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-09-05",
+        "version": "DeepSeek-V2.5",
+        "value": 2.5,
+        "source": "https://api-docs.deepseek.com/updates/#date-2024-09-05",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-12-26",
+        "version": "DeepSeek-V3",
+        "value": 3,
+        "source": "https://api-docs.deepseek.com/updates/#date-2024-12-26",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-08-21",
+        "version": "DeepSeek-V3.1",
+        "value": 3.1,
+        "source": "https://api-docs.deepseek.com/updates/#date-2025-08-21",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-09-29",
+        "version": "DeepSeek-V3.2-Exp",
+        "value": 3.2,
+        "source": "https://api-docs.deepseek.com/updates/#date-2025-09-29",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-12-01",
+        "version": "DeepSeek-V3.2",
+        "value": 3.2,
+        "source": "https://api-docs.deepseek.com/updates/#date-2025-12-01",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-04-24",
+        "version": "DeepSeek-V4 Preview",
+        "value": 4,
+        "source": "https://api-docs.deepseek.com/updates/#date-2026-04-24",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-09-10",
+        "version": "DeepSeek-V4.1-Flash",
+        "value": 4.1,
+        "source": "https://api-docs.deepseek.com/updates/#date-2026-09-10",
+        "releaseKind": "announcement"
+      }
+    ]
+  },
+  {
+    "id": "qwen",
+    "name": "Qwen",
+    "category": "ai",
+    "metric": "version",
+    "description": "Qwen 通用模型的主次编号；模型参数量和日期后缀不作为版本。包含 Max 的新编号代际，不混入 QwQ 或图像独立系列。",
+    "coverage": "精选 2024-02-04 至 2026-11-16 的编号代际；未为原始 Qwen 补造 1.0，不穷举参数规模、专用分支和中间更新。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2024-02-04",
+        "version": "Qwen1.5",
+        "value": 1.5,
+        "source": "https://qwenlm.github.io/blog/qwen1.5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-06-07",
+        "version": "Qwen2",
+        "value": 2,
+        "source": "https://qwenlm.github.io/blog/qwen2/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-09-19",
+        "version": "Qwen2.5",
+        "value": 2.5,
+        "source": "https://qwenlm.github.io/blog/qwen2.5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-04-29",
+        "version": "Qwen3",
+        "value": 3,
+        "source": "https://qwenlm.github.io/blog/qwen3/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-02-15",
+        "version": "Qwen3.5",
+        "value": 3.5,
+        "source": "https://qwen.ai/blog?id=qwen3.5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-08-03",
+        "version": "Qwen3.8-Max",
+        "value": 3.8,
+        "source": "https://qwen.ai/blog?id=qwen3.8",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-11-16",
+        "version": "Qwen4-Max",
+        "value": 4,
+        "source": "https://qwen.ai/",
+        "releaseKind": "announcement"
+      }
+    ]
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "category": "ai",
+    "metric": "version",
+    "description": "Gemini 通用模型主次编号；以官方首次公告日期为准，实验或受限预览明确标记，不混入 Gemma 与图像独立编号。",
+    "coverage": "精选 2023-12-06 至 2026-09-30 的首次编号公告；同编号 Pro、Flash、Argon、Carbon、Hydrogen 等档位不重复铺点，未穷举所有实验快照。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2023-12-06",
+        "version": "Gemini 1.0",
+        "value": 1,
+        "source": "https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-02-15",
+        "version": "Gemini 1.5 Pro",
+        "value": 1.5,
+        "source": "https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2024-12-11",
+        "version": "Gemini 2.0 Flash Experimental",
+        "value": 2,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-ai-update-december-2024/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-03-25",
+        "version": "Gemini 2.5 Pro Experimental",
+        "value": 2.5,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-11-18",
+        "version": "Gemini 3 Pro",
+        "value": 3,
+        "source": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-02-19",
+        "version": "Gemini 3.1 Pro",
+        "value": 3.1,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-05-19",
+        "version": "Gemini 3.5 Flash",
+        "value": 3.5,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-07-21",
+        "version": "Gemini 3.6 Flash",
+        "value": 3.6,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-30",
+        "version": "Gemini 4 Argon",
+        "value": 4,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "releaseKind": "preview"
+      }
+    ]
+  }
+]

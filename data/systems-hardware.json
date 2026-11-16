@@ -1,0 +1,498 @@
+[
+  {
+    "id": "windows",
+    "name": "Windows 产品编号",
+    "category": "os",
+    "metric": "version",
+    "description": "取 Windows 产品名称中的数字；2000 是产品名，不是性能得分。XP、Vista、Me 等无数字名称不强行映射。",
+    "coverage": "精选 Windows 98 至 Windows 11 的正式产品节点，含 8.1；不包含 Server、NT、补丁或 Insider。日期为公开上市/上线日期。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "1998-06-25",
+        "version": "Windows 98",
+        "value": 98,
+        "source": "https://news.microsoft.com/source/1998/06/25/microsoft-announces-immediate-availability-of-windows-98-in-more-than-40-countries/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2000-02-17",
+        "version": "Windows 2000",
+        "value": 2000,
+        "source": "https://news.microsoft.com/source/2000/02/17/gates-ushers-in-next-generation-of-pc-computing-with-launch-of-windows-2000/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2009-10-22",
+        "version": "Windows 7",
+        "value": 7,
+        "source": "https://news.microsoft.com/source/2009/10/22/microsoft-simplifies-the-pc-with-windows-7/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2012-10-26",
+        "version": "Windows 8",
+        "value": 8,
+        "source": "https://news.microsoft.com/source/2012/10/18/microsoft-reports-first-quarter-results/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2013-10-17",
+        "version": "Windows 8.1",
+        "value": 8.1,
+        "source": "https://blogs.windows.com/windowsexperience/2013/10/17/windows-8-1-now-available/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2015-07-29",
+        "version": "Windows 10",
+        "value": 10,
+        "source": "https://blogs.windows.com/windowsdeveloper/2015/07/29/its-time-to-upgrade-your-world-and-your-apps/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-10-05",
+        "version": "Windows 11",
+        "value": 11,
+        "source": "https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/",
+        "releaseKind": "stable"
+      }
+    ]
+  },
+  {
+    "id": "windows-build",
+    "name": "Windows Build",
+    "category": "os",
+    "metric": "build",
+    "description": "取精选正式功能版本的基础 OS Build 整数编号，不取每月累计更新的修订号，也不取 24H2 等产品版本名称。",
+    "coverage": "Windows 10 的 1507、1703、1903、2004 及 Windows 11 的 21H2–26H2。按正式功能版本上市日记录，省略同期旧分支更新、硬件专用 26H1 和 Insider；不是完整 Build 历史。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2015-07-29",
+        "version": "10240",
+        "value": 10240,
+        "source": "https://blogs.windows.com/windowsdeveloper/2015/07/29/its-time-to-upgrade-your-world-and-your-apps/",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 1507"
+      },
+      {
+        "date": "2017-04-11",
+        "version": "15063",
+        "value": 15063,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 1703"
+      },
+      {
+        "date": "2019-05-21",
+        "version": "18362",
+        "value": 18362,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 1903"
+      },
+      {
+        "date": "2020-05-27",
+        "version": "19041",
+        "value": 19041,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 2004"
+      },
+      {
+        "date": "2021-10-05",
+        "version": "22000",
+        "value": 22000,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 21H2"
+      },
+      {
+        "date": "2022-09-20",
+        "version": "22621",
+        "value": 22621,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 22H2"
+      },
+      {
+        "date": "2023-10-31",
+        "version": "22631",
+        "value": 22631,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 23H2"
+      },
+      {
+        "date": "2024-10-01",
+        "version": "26100",
+        "value": 26100,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 24H2"
+      },
+      {
+        "date": "2025-09-30",
+        "version": "26200",
+        "value": 26200,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 25H2"
+      },
+      {
+        "date": "2026-09-29",
+        "version": "26300",
+        "value": 26300,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 26H2"
+      }
+    ]
+  },
+  {
+    "id": "ios",
+    "name": "iOS",
+    "category": "os",
+    "metric": "version",
+    "description": "iOS 年度主版本号；使用正式更新开放日，不使用 WWDC 预告或测试版日期。",
+    "coverage": "iOS 7–18、26、27 的年度正式主版本；编号由 18 跳至 26，不补造 19–25；不含小版本和安全补丁。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2013-09-18",
+        "version": "iOS 7",
+        "value": 7,
+        "source": "https://www.apple.com/om/newsroom/2013/09/10iOS-7-With-Completely-Redesigned-User-Interface-Great-New-Features-Available-September-18/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2014-09-17",
+        "version": "iOS 8",
+        "value": 8,
+        "source": "https://www.apple.com/newsroom/2014/09/09Apple-Announces-iOS-8-Available-September-17/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2015-09-16",
+        "version": "iOS 9",
+        "value": 9,
+        "source": "https://www.apple.com/newsroom/2015/09/09iOS-9-Available-as-a-Free-Update-for-iPhone-iPad-iPod-touch-Users-September-16/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-09-13",
+        "version": "iOS 10",
+        "value": 10,
+        "source": "https://www.apple.com/newsroom/2016/09/whats-new-in-ios-10/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-09-19",
+        "version": "iOS 11",
+        "value": 11,
+        "source": "https://support.apple.com/en-ca/103804",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2018-09-17",
+        "version": "iOS 12",
+        "value": 12,
+        "source": "https://www.apple.com/newsroom/2018/09/ios-12-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-09-19",
+        "version": "iOS 13",
+        "value": 13,
+        "source": "https://support.apple.com/en-la/103106",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-09-16",
+        "version": "iOS 14",
+        "value": 14,
+        "source": "https://www.apple.com/newsroom/2020/09/ios-14-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-09-20",
+        "version": "iOS 15",
+        "value": 15,
+        "source": "https://www.apple.com/newsroom/2021/09/ios-15-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-09-12",
+        "version": "iOS 16",
+        "value": 16,
+        "source": "https://www.apple.com/newsroom/2022/09/ios-16-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2023-09-18",
+        "version": "iOS 17",
+        "value": 17,
+        "source": "https://www.apple.com/newsroom/2023/09/ios-17-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-09-16",
+        "version": "iOS 18",
+        "value": 18,
+        "source": "https://www.apple.com/newsroom/2024/09/ios-18-is-available-today-making-iphone-more-personal-and-capable-than-ever/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-09-15",
+        "version": "iOS 26",
+        "value": 26,
+        "source": "https://www.apple.com/newsroom/2025/09/new-versions-of-apples-software-platforms-are-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-09-14",
+        "version": "iOS 27",
+        "value": 27,
+        "source": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+        "releaseKind": "stable"
+      }
+    ]
+  },
+  {
+    "id": "iphone",
+    "name": "iPhone",
+    "category": "hardware",
+    "metric": "model",
+    "description": "取带数字的标准款型号；iPhone X 的罗马数字 X 显式映射为 10。日期使用首批市场发售日。",
+    "coverage": "iPhone 4–17 的编号标准款（没有 iPhone 9）；不另收 S、C、SE、XS、XR、mini、Plus、Pro、Air 或 Duo。最新核实标准款为 iPhone 17，不能用 Pro 18 代替。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2010-06-24",
+        "version": "iPhone 4",
+        "value": 4,
+        "source": "https://www.apple.com/newsroom/2010/06/07Apple-Presents-iPhone-4/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2012-09-21",
+        "version": "iPhone 5",
+        "value": 5,
+        "source": "https://www.apple.com/newsroom/2012/09/12Apple-Introduces-iPhone-5/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2014-09-19",
+        "version": "iPhone 6",
+        "value": 6,
+        "source": "https://www.apple.com/newsroom/2014/09/09Apple-Announces-iPhone-6-iPhone-6-Plus-The-Biggest-Advancements-in-iPhone-History/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-09-16",
+        "version": "iPhone 7",
+        "value": 7,
+        "source": "https://www.apple.com/newsroom/2016/09/apple-introduces-iphone-7-iphone-7-plus/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-09-22",
+        "version": "iPhone 8",
+        "value": 8,
+        "source": "https://www.apple.com/newsroom/2017/09/iphone-8-and-iphone-8-plus-now-available/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-11-03",
+        "version": "iPhone X",
+        "value": 10,
+        "source": "https://www.apple.com/newsroom/2017/11/iphone-x-arriving-in-stores-around-the-world/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-09-20",
+        "version": "iPhone 11",
+        "value": 11,
+        "source": "https://www.apple.com/newsroom/2019/09/apple-introduces-dual-camera-iphone-11/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-10-23",
+        "version": "iPhone 12",
+        "value": 12,
+        "source": "https://www.apple.com/newsroom/2020/10/iphone-12-iphone-12-pro-and-ipad-air-are-here/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-09-24",
+        "version": "iPhone 13",
+        "value": 13,
+        "source": "https://www.apple.com/newsroom/2021/09/iphone-13-lineup-new-ipad-mini-and-ninth-generation-ipad-arrive-worldwide/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-09-16",
+        "version": "iPhone 14",
+        "value": 14,
+        "source": "https://www.apple.com/newsroom/2022/09/iphone-14-lineup-apple-watch-series-8-and-new-apple-watch-se-arrive-worldwide/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2023-09-22",
+        "version": "iPhone 15",
+        "value": 15,
+        "source": "https://www.apple.com/newsroom/2023/09/iphone-15-lineup-and-new-apple-watch-lineup-arrive-worldwide/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-09-20",
+        "version": "iPhone 16",
+        "value": 16,
+        "source": "https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-09-19",
+        "version": "iPhone 17",
+        "value": 17,
+        "source": "https://www.apple.com/newsroom/2025/09/apple-debuts-iphone-17/",
+        "releaseKind": "stable"
+      }
+    ]
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA GeForce",
+    "category": "hardware",
+    "metric": "model",
+    "description": "精选消费级桌面系列首发阵容的最高档型号，纵轴为型号数字；排除 TITAN、专业卡和后续刷新款。2080 Ti 属于首发阵容，故保留。",
+    "coverage": "覆盖 GTX 600、700、900、1000 和 RTX 20、30、40、50 系列首发旗舰；不包含 2012 年以前产品。GTX 980 按美国官方现货公告日 2014-09-18 记录。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2012-03-22",
+        "version": "GTX 680",
+        "value": 680,
+        "source": "https://nvidianews.nvidia.com/news/nvidia-launches-first-geforce-gpus-based-on-next-generation-kepler-architecture",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2013-05-23",
+        "version": "GTX 780",
+        "value": 780,
+        "source": "https://nvidianews.nvidia.com/news/new-nvidia-geforce-gtx-780-gpu-leads-the-industry-with-the-fastest-frame-rates-and-super-smooth-animation-for-next-generation-gaming",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2014-09-18",
+        "version": "GTX 980",
+        "value": 980,
+        "source": "https://nvidianews.nvidia.com/news/nvidia-unveils-full-power-of-maxwell-gpu-architecture-with-breakthroughs-in-performance-graphics-efficiency-6622538",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-05-27",
+        "version": "GTX 1080",
+        "value": 1080,
+        "source": "https://nvidianews.nvidia.com/news/a-quantum-leap-in-gaming%3A-nvidia-introduces-geforce-gtx-1080",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2018-09-27",
+        "version": "RTX 2080 Ti",
+        "value": 2080,
+        "source": "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-2080-ti-reviews/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-09-24",
+        "version": "RTX 3090",
+        "value": 3090,
+        "source": "https://www.nvidia.com/en-us/geforce/news/introducing-rtx-30-series-graphics-cards/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-10-12",
+        "version": "RTX 4090",
+        "value": 4090,
+        "source": "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4090-out-now/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-01-30",
+        "version": "RTX 5090",
+        "value": 5090,
+        "source": "https://www.nvidia.com/en-eu/geforce/news/rtx-5090-5080-out-now/",
+        "releaseKind": "stable"
+      }
+    ]
+  },
+  {
+    "id": "amd",
+    "name": "AMD Radeon",
+    "category": "hardware",
+    "metric": "model",
+    "description": "精选消费级桌面系列首发阵容的最高档单 GPU 型号；取具体型号数字（R9 290X 取 290，RX Vega 64 取 64），不取 R9 系列前缀。",
+    "coverage": "精选 HD 7000、R9 200、RX 400、Vega、RX 5000/6000/7000/9000 系列的首发旗舰里程碑；不是完整产品史。省略无普通数字编号的 Fury、VII，以及后续刷新和多 GPU 卡。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2012-01-09",
+        "version": "HD 7970",
+        "value": 7970,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/201/amd-launches-worlds-fastest-single-gpu-graphics-card----the-amd-radeontm-hd-7970",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2013-10-24",
+        "version": "R9 290X",
+        "value": 290,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/452/amd-radeon-r9-290x-graphics-card-pioneers-a-new-era-in-gaming-experience",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-06-29",
+        "version": "RX 480",
+        "value": 480,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/695/amd-launches-the-radeon-rebellion-with-the-radeontm-rx-480-graphics-card-available-now",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-08-14",
+        "version": "RX Vega 64",
+        "value": 64,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/787/radeon-rx-vega-graphics-cards-and-radeon-packs-next-generation-enthusiast-gaming-available-now",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-07-07",
+        "version": "RX 5700 XT",
+        "value": 5700,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/899/amd-unleashes-ultimate-pc-gaming-platform-with-worldwide-availability-of-amd-radeon-rx-5700-series-graphics-cards-and-amd-ryzen-3000-series-desktop-processors",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-12-08",
+        "version": "RX 6900 XT",
+        "value": 6900,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/978/amd-unveils-next-generation-pc-gaming-with-amd-radeon-rx-6000-series-bringing-leadership-4k-resolution-performance-to-aaa-gaming",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-12-13",
+        "version": "RX 7900 XTX",
+        "value": 7900,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1099/amd-unveils-worlds-most-advanced-gaming-graphics-cards-built-on-groundbreaking-amd-rdna-3-architecture-with-chiplet-design",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-03-06",
+        "version": "RX 9070 XT",
+        "value": 9070,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-amd-radeon-rx-9000-series-graphics-cards",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]
