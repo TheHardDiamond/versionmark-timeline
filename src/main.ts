@@ -27,7 +27,7 @@ app.innerHTML = `<header><a href="${REPO_URL}">↗ GitHub</a><h1>Versionmark Tim
 <main><details open><summary>曲线与数据</summary><input id="search" type="search" placeholder="搜索曲线" aria-label="搜索曲线">
 <div class="tools"><button id="classic">原版九条</button><button id="all">全部扩展</button><button id="mc">Minecraft 专场</button><button id="clear">清空</button></div>
 <div id="series"></div><label class="file">临时加载 CSV<input id="csv" type="file" accept=".csv" multiple></label>
-<p class="small">仅本次页面有效，刷新后清除。</p><p role="status" id="status"></p><a href="${REPO_URL}/issues/new?template=timeline.yml">投稿公共数据 ↗</a></details>
+<p class="small">仅本次页面有效，刷新后清除。<a href="${import.meta.env.BASE_URL}example.csv" download>下载示例</a></p><p role="status" id="status"></p><a href="${REPO_URL}/issues/new?template=timeline.yml">投稿公共数据 ↗</a></details>
 <section><div class="tools"><label><input id="axis" type="checkbox" checked> 自动断轴</label><button id="export">导出图表</button></div>
 <div id="chart" aria-label="版本号时间线"></div><p id="foot"></p><p id="point" aria-live="polite">点击节点查看发布来源。</p></section></main>
 <dialog id="export-dialog"><form method="dialog"><button aria-label="关闭">关闭</button></form><h2>导出图表</h2>
@@ -40,6 +40,12 @@ const visible=()=>[...published,...temporary].filter(s=>selected.has(s.id));
 const marked=(lines:DisplaySeries[])=>lines.some(s=>s.origin==='temporary');
 const branding=()=>get<HTMLInputElement>('branding').checked;
 const snapshotNote='MCJE 快照绘制旧命名的周数，新命名启用后停止更新。';
+const gpuNote='显卡曲线取各代消费级桌面系列的首发旗舰型号。';
+const notesFor=(lines:DisplaySeries[])=>[
+  lines.some(s=>s.metric==='week')?snapshotNote:'',
+  lines.some(s=>s.id==='nvidia'||s.id==='amd')?gpuNote:'',
+  marked(lines)?DISCLAIMER:'',
+].filter(Boolean);
 function options(lines:DisplaySeries[], exported=false): ChartOptions {
   const values=[...new Set(lines.flatMap(s=>s.points.map(p=>p.value)))].sort((a,b)=>a-b);
   const breaks:{start:number;end:number;gap:string}[]=[];
@@ -50,7 +56,7 @@ function options(lines:DisplaySeries[], exported=false): ChartOptions {
       if(gap>Math.max(4,span*.045) && gap>values[i-1]*.6) breaks.push({start:values[i-1]+gap*.08,end:values[i]-gap*.08,gap:'2%'});
     }
   }
-  const notes=[lines.some(s=>s.metric==='week')?snapshotNote:'',marked(lines)?DISCLAIMER:'',branding()?BRANDING:''].filter(Boolean);
+  const notes=[...notesFor(lines),...(branding()?[BRANDING]:[])];
   const footer=exported?notes.length*23:0;
   return {
     backgroundColor:'#fff', animation:false, useUTC:true,
@@ -80,7 +86,9 @@ function draw(){
   try { localStorage.setItem('versionmark:series',JSON.stringify(published.filter(s=>selected.has(s.id)).map(s=>s.id))); }
   catch { /* The chart works without persistent storage. */ }
   chart.setOption(options(lines),true);
-  get('foot').innerHTML=`${lines.some(s=>s.metric==='week')?esc(snapshotNote)+'<br>':''}${marked(lines)?esc(DISCLAIMER)+'<br>':''}${branding()?`<a href="${REPO_URL}">${BRANDING}</a>`:''}`;
+  const notes=notesFor(lines).map(esc);
+  if(branding())notes.push(`<a href="${REPO_URL}">${BRANDING}</a>`);
+  get('foot').innerHTML=notes.join('<br>');
 }
 function list(){
   const query=get<HTMLInputElement>('search').value.trim().toLowerCase();
