@@ -23,17 +23,30 @@ function savedSelection(): Set<string> {
 let selected = savedSelection();
 let range: {start:number;end:number} = {start:0,end:100};
 const app = document.querySelector('#app')!;
-app.innerHTML = `<header><a href="${REPO_URL}">↗ GitHub</a><h1>Versionmark Timeline</h1><p>纵轴为版本号，仅供整活。</p></header>
+const defaultTitle = 'Versionmark Timeline';
+app.innerHTML = `<header><a href="${REPO_URL}">↗ GitHub</a><h1 id="page-title">Versionmark Timeline</h1><p>纵轴为版本号，仅供整活。</p></header>
 <main><details open><summary>曲线与数据</summary><input id="search" type="search" placeholder="搜索曲线" aria-label="搜索曲线">
 <div class="tools"><button id="classic">原版九条</button><button id="all">全部扩展</button><button id="mc">Minecraft 专场</button><button id="clear">清空</button></div>
 <div id="series"></div><label class="file">临时加载 CSV<input id="csv" type="file" accept=".csv" multiple></label>
 <p class="small">仅本次页面有效，刷新后清除。<a href="${import.meta.env.BASE_URL}example.csv" download>下载示例</a></p><p role="status" id="status"></p><a href="${REPO_URL}/issues/new?template=timeline.yml">投稿公共数据 ↗</a></details>
-<section><div class="tools"><label><input id="axis" type="checkbox" checked> 自动断轴</label><button id="export">导出图表</button></div>
+<section><div class="tools"><label>图表标题 <input id="chart-title" type="text" maxlength="80" placeholder="Versionmark Timeline"></label><label><input id="axis" type="checkbox" checked> 自动断轴</label><button id="export">导出图表</button></div>
 <div id="chart" aria-label="版本号时间线"></div><p id="foot"></p><p id="point" aria-live="polite">点击节点查看发布来源。</p></section></main>
 <dialog id="export-dialog"><form method="dialog"><button aria-label="关闭">关闭</button></form><h2>导出图表</h2>
 <div class="tools"><select id="format" aria-label="格式"><option>PNG</option><option>SVG</option></select><select id="orientation" aria-label="版式"><option value="landscape">横版</option><option value="portrait">竖版</option></select>
 <label><input id="branding" type="checkbox" checked> 显示项目标识</label><button id="download">下载</button></div><img id="preview" alt="导出预览"></dialog>`;
 const get = <T extends HTMLElement>(id:string)=>document.getElementById(id) as T;
+const titleInput = get<HTMLInputElement>('chart-title');
+const pageTitle = () => titleInput.value.trim() || defaultTitle;
+try { titleInput.value = localStorage.getItem('versionmark:title') ?? ''; } catch { /* Optional storage. */ }
+function updateTitle() {
+  get('page-title').textContent = pageTitle();
+  document.title = pageTitle() + ' · Versionmark Timeline';
+}
+titleInput.addEventListener('input', () => {
+  updateTitle();
+  try { localStorage.setItem('versionmark:title', titleInput.value); } catch { /* Optional storage. */ }
+});
+updateTitle();
 const chartNode=get('chart');
 const chart=echarts.init(chartNode,undefined,{renderer:'svg'});
 const visible=()=>[...published,...temporary].filter(s=>selected.has(s.id));
@@ -60,7 +73,7 @@ function options(lines:DisplaySeries[], exported=false): ChartOptions {
   const footer=exported?notes.length*23:0;
   return {
     backgroundColor:'#fff', animation:false, useUTC:true,
-    title:exported?{text:'Versionmark Timeline',subtext:'纵轴为版本号，仅供整活',left:'center',top:15}:undefined,
+    title:exported?{text:pageTitle(),textStyle:{width:1000,overflow:'truncate'},subtext:'纵轴为版本号，仅供整活',left:'center',top:15}:undefined,
     legend:{type:'plain',top:exported?70:12,left:16,right:16,selectedMode:false,
       formatter:id=>displayName(lines.find(s=>s.id===id)!)},
     grid:{top:(exported?111:54)+Math.ceil(lines.length/(exported?6:4))*22,left:64,right:exported?220:chartNode.clientWidth<600?78:154,bottom:72+footer},
