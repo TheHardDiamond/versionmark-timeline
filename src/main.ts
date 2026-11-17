@@ -29,7 +29,7 @@ app.innerHTML = `<header><a href="${REPO_URL}">↗ GitHub</a><h1 id="page-title"
 <div class="tools"><button id="classic">原版九条</button><button id="all">全部扩展</button><button id="mc">Minecraft 专场</button><button id="clear">清空</button></div>
 <div id="series"></div><label class="file">临时加载 CSV<input id="csv" type="file" accept=".csv" multiple></label>
 <p class="small">仅本次页面有效，刷新后清除。<a href="${import.meta.env.BASE_URL}example.csv" download>下载示例</a></p><p role="status" id="status"></p><a href="${REPO_URL}/issues/new?template=timeline.yml">投稿公共数据 ↗</a></details>
-<section><div class="tools"><label>图表标题 <input id="chart-title" type="text" maxlength="80" placeholder="Versionmark Timeline"></label><label><input id="axis" type="checkbox" checked> 自动断轴</label><button id="export">导出图表</button></div>
+<section><div class="tools"><label>图表标题 <input id="chart-title" type="text" maxlength="80" placeholder="Versionmark Timeline"></label><label><input id="axis" type="checkbox" checked> 自动断轴</label><label><input id="point-values" type="checkbox"> 显示节点数值</label><button id="export">导出图表</button></div>
 <div id="chart" aria-label="版本号时间线"></div><p id="foot"></p><p id="point" aria-live="polite">点击节点查看发布来源。</p></section></main>
 <dialog id="export-dialog"><form method="dialog"><button aria-label="关闭">关闭</button></form><h2>导出图表</h2>
 <div class="tools"><select id="format" aria-label="格式"><option>PNG</option><option>SVG</option></select><select id="orientation" aria-label="版式"><option value="landscape">横版</option><option value="portrait">竖版</option></select>
@@ -52,6 +52,7 @@ const chart=echarts.init(chartNode,undefined,{renderer:'svg'});
 const visible=()=>[...published,...temporary].filter(s=>selected.has(s.id));
 const marked=(lines:DisplaySeries[])=>lines.some(s=>s.origin==='temporary');
 const branding=()=>get<HTMLInputElement>('branding').checked;
+const formatNumber=new Intl.NumberFormat('en',{maximumFractionDigits:2,useGrouping:false});
 const snapshotNote='MCJE 快照绘制旧命名的周数，新命名启用后停止更新。';
 const gpuNote='显卡曲线取各代消费级桌面系列的首发旗舰型号。';
 const notesFor=(lines:DisplaySeries[])=>[
@@ -60,13 +61,14 @@ const notesFor=(lines:DisplaySeries[])=>[
   marked(lines)?DISCLAIMER:'',
 ].filter(Boolean);
 function options(lines:DisplaySeries[], exported=false): ChartOptions {
+  const showPointValues=get<HTMLInputElement>('point-values').checked;
   const values=[...new Set(lines.flatMap(s=>s.points.map(p=>p.value)))].sort((a,b)=>a-b);
   const breaks:{start:number;end:number;gap:string}[]=[];
   if(get<HTMLInputElement>('axis').checked && values.length>1){
     const span=values.at(-1)!-values[0];
     for(let i=1;i<values.length;i++){
       const gap=values[i]-values[i-1];
-      if(gap>Math.max(4,span*.045) && gap>values[i-1]*.6) breaks.push({start:values[i-1]+gap*.08,end:values[i]-gap*.08,gap:'2%'});
+      if(gap>Math.max(4,span*.045) && gap>values[i-1]*.6) breaks.push({start:Number((values[i-1]+gap*.08).toFixed(2)),end:Number((values[i]-gap*.08).toFixed(2)),gap:'2%'});
     }
   }
   const notes=[...notesFor(lines),...(branding()?[BRANDING]:[])];
@@ -83,14 +85,16 @@ function options(lines:DisplaySeries[], exported=false): ChartOptions {
       return `${series?displayName(series):''}\n${p.data[2]} · ${new Date(p.data[0]).toISOString().slice(0,10)}`;
     }},
     xAxis:{type:'time',boundaryGap:['2%','3%']},
-    yAxis:{type:'value',scale:true, name:'版本号 / 编号',...{breaks,breakArea:{expandOnClick:false}}},
+    yAxis:{type:'value',scale:true,name:'版本号 / 编号',axisLabel:{formatter:value=>formatNumber.format(Number(value))},breaks,breakArea:{expandOnClick:false}},
     dataZoom:[{type:'inside',...range},{type:'slider',show:!exported,bottom:12,...range}],
     graphic:exported?notes.map((text,i)=>({type:'text',left:24,bottom:19+(notes.length-i-1)*23,style:{text,fill:'#465655',font:'14px sans-serif'}})):[],
     series:lines.map(s=>({id:s.id,name:s.id,type:'line',color:s.color,showSymbol:true,symbolSize:5,clip:true,
       lineStyle:{type:s.metric==='week'||s.id==='ios'?'dashed':'solid'},
+      label:{show:showPointValues,position:'top',distance:4,color:s.color,fontSize:10,
+        formatter:p=>String((p.value as [number,number,string])[1])},
       endLabel:{show:true,color:s.color,backgroundColor:'#fff',padding:[3,5],borderColor:s.color,borderWidth:1,borderRadius:3,
         formatter:(p)=>`${displayName(s)} ${(p.value as [number,number,string])[2]}`},
-      labelLayout:{moveOverlap:'shiftY',hideOverlap:true},
+      labelLayout:{moveOverlap:'shiftY',hideOverlap:!showPointValues},
       data:s.points.map(p=>[Date.parse(p.date),p.value,p.version])}))
   };
 }
@@ -134,6 +138,7 @@ get('all').onclick=()=>{selected=new Set([...published,...temporary].map(s=>s.id
 get('mc').onclick=()=>{selected=new Set(published.filter(s=>s.id.startsWith('minecraft')).map(s=>s.id));range={start:0,end:100};refresh();};
 get('clear').onclick=()=>{selected.clear();refresh();};
 get('axis').onchange=draw;
+get('point-values').onchange=draw;
 const csvInput=get<HTMLInputElement>('csv');
 csvInput.onchange=async ()=>{
   const messages:string[]=[];
