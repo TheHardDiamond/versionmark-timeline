@@ -91,10 +91,16 @@ function options(lines:DisplaySeries[], exported=false): ChartOptions {
     series:lines.map(s=>({id:s.id,name:s.id,type:'line',color:s.color,showSymbol:true,symbolSize:5,clip:true,
       lineStyle:{type:s.metric==='week'||s.id==='ios'?'dashed':'solid'},
       label:{show:showPointValues,position:'top',distance:4,color:s.color,fontSize:10,
-        formatter:p=>String((p.value as [number,number,string])[1])},
+        formatter:p=>{
+          const [,value,version]=p.value as [number,number,string];
+          const numericVersion=version.match(/^v?(\d+(?:\.\d+)?)(?:\.\d+)*$/i)?.[1];
+          return numericVersion && Number(numericVersion)===value ? numericVersion : String(value);
+        }},
       endLabel:{show:true,color:s.color,backgroundColor:'#fff',padding:[3,5],borderColor:s.color,borderWidth:1,borderRadius:3,
         formatter:(p)=>`${displayName(s)} ${(p.value as [number,number,string])[2]}`},
-      labelLayout:{moveOverlap:'shiftY',hideOverlap:!showPointValues},
+      // ECharts lays out point labels and end labels together. Keep every
+      // label at its anchor when showing point values.
+      labelLayout:showPointValues?undefined:{moveOverlap:'shiftY',hideOverlap:true},
       data:s.points.map(p=>[Date.parse(p.date),p.value,p.version])}))
   };
 }

@@ -1,6 +1,15 @@
 # Versionmark Timeline
 
-跨 AI、游戏、系统和硬件的版本号时间线。图上的值按各系列的编号口径计算，仅供整活。点选节点可查看发布来源。
+**一张用版本号比较 AI、游戏、操作系统和硬件的整活时间线。**
+
+[![打开 Versionmark Timeline](https://img.shields.io/badge/打开网页-Versionmark%20Timeline-216652?style=for-the-badge)](https://theharddiamond.github.io/versionmark-timeline/)
+
+- **选曲线。** 默认显示原版九条。可以按分类搜索、切换预设，或打开 Minecraft 专场。
+- **查来源。** 点击节点查看原始版本号、发布日期和来源。纵轴按各系列的编号规则绘制，例如 `1.10` 的绘图值是 `1.1`，标签仍写作 `1.10`。
+- **加自己的线。** 用 [CSV 示例](public/example.csv) 在浏览器临时加载数据。每条临时线带星号，刷新后清除。
+- **导出图表。** 可自定义标题、显示节点数值，选择横版或竖版 PNG / SVG。导出会保留临时曲线的星号和声明。
+
+[提交公共数据](https://github.com/TheHardDiamond/versionmark-timeline/issues/new?template=timeline.yml)
 
 ## 本地运行
 
@@ -9,12 +18,9 @@
 ```sh
 npm ci
 npm run dev
-npm run validate:data
-npm test
-npm run build
 ```
 
-本地页面路径为 `/versionmark-timeline/`。临时 CSV 仅保留在当前页面内存。示例见 [example.csv](public/example.csv)。导出可选择横版或竖版 PNG / SVG，临时曲线的星号与声明会保留。
+打开 [本地预览](http://127.0.0.1:5173/versionmark-timeline/)。提交改动前运行 `npm run validate:data`、`npm test` 和 `npm run build`。
 
 ## 维护与部署
 
