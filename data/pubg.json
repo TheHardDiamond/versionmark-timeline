@@ -1,0 +1,34 @@
+[
+  {
+    "id": "pubg",
+    "name": "PUBG",
+    "category": "games",
+    "metric": "version",
+    "updatedAt": "2026-11-16",
+    "description": "PUBG: BATTLEGROUNDS 的 PC 正式服补丁编号；取官方维护日，非公告日或主机服日期。",
+    "coverage": "首版核实 Update 30.1、35.1、40.1 三个里程碑，未穷举所有补丁。",
+    "points": [
+      {
+        "date": "2024-06-12",
+        "version": "30.1",
+        "value": 30.1,
+        "source": "https://pubg.com/en/news/7424",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-04-09",
+        "version": "35.1",
+        "value": 35.1,
+        "source": "https://pubg.com/en/news/8476",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-02-04",
+        "version": "40.1",
+        "value": 40.1,
+        "source": "https://pubg.com/en/news/9690",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

@@ -8,6 +8,7 @@ let points = 0;
 for (const file of readdirSync('data').filter(name=>name.endsWith('.json'))) {
   const series = JSON.parse(readFileSync('data/'+file,'utf8').replace(/^\uFEFF/,'')) as Series[];
   assert(Array.isArray(series), file);
+  assert(series.length === 1 && file === series[0].id+'.json', file+' 必须且只能存放同名曲线');
   for (const line of series) {
     assert(/^[a-z0-9][a-z0-9-]*$/.test(line.id) && !ids.has(line.id), line.id);
     ids.add(line.id);

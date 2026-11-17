@@ -1,0 +1,69 @@
+[
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "category": "ai",
+    "metric": "version",
+    "description": "仅绘制 DeepSeek V 系列主次编号；R1 是不同产品线，不接成 V3 后的版本倒退。实验预览和正式发布分别标明。",
+    "coverage": "精选 2024-05-06 至 2026-09-10 的 V 系列；不把未编号的早期模型补造 V1，不穷举日期后缀更新、Lite 和参数规模。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2024-05-06",
+        "version": "DeepSeek-V2",
+        "value": 2,
+        "source": "https://github.com/deepseek-ai/DeepSeek-V2",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-09-05",
+        "version": "DeepSeek-V2.5",
+        "value": 2.5,
+        "source": "https://api-docs.deepseek.com/updates/#date-2024-09-05",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-12-26",
+        "version": "DeepSeek-V3",
+        "value": 3,
+        "source": "https://api-docs.deepseek.com/updates/#date-2024-12-26",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-08-21",
+        "version": "DeepSeek-V3.1",
+        "value": 3.1,
+        "source": "https://api-docs.deepseek.com/updates/#date-2025-08-21",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-09-29",
+        "version": "DeepSeek-V3.2-Exp",
+        "value": 3.2,
+        "source": "https://api-docs.deepseek.com/updates/#date-2025-09-29",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-12-01",
+        "version": "DeepSeek-V3.2",
+        "value": 3.2,
+        "source": "https://api-docs.deepseek.com/updates/#date-2025-12-01",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-04-24",
+        "version": "DeepSeek-V4 Preview",
+        "value": 4,
+        "source": "https://api-docs.deepseek.com/updates/#date-2026-04-24",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-09-10",
+        "version": "DeepSeek-V4.1-Flash",
+        "value": 4.1,
+        "source": "https://api-docs.deepseek.com/updates/#date-2026-09-10",
+        "releaseKind": "announcement"
+      }
+    ]
+  }
+]

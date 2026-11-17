@@ -1,0 +1,93 @@
+[
+  {
+    "id": "windows-build",
+    "name": "Windows Build",
+    "category": "os",
+    "metric": "build",
+    "description": "取精选正式功能版本的基础 OS Build 整数编号，不取每月累计更新的修订号，也不取 24H2 等产品版本名称。",
+    "coverage": "Windows 10 的 1507、1703、1903、2004 及 Windows 11 的 21H2–26H2。按正式功能版本上市日记录，省略同期旧分支更新、硬件专用 26H1 和 Insider；不是完整 Build 历史。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2015-07-29",
+        "version": "10240",
+        "value": 10240,
+        "source": "https://blogs.windows.com/windowsdeveloper/2015/07/29/its-time-to-upgrade-your-world-and-your-apps/",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 1507"
+      },
+      {
+        "date": "2017-04-11",
+        "version": "15063",
+        "value": 15063,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 1703"
+      },
+      {
+        "date": "2019-05-21",
+        "version": "18362",
+        "value": 18362,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 1903"
+      },
+      {
+        "date": "2020-05-27",
+        "version": "19041",
+        "value": 19041,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 10 2004"
+      },
+      {
+        "date": "2021-10-05",
+        "version": "22000",
+        "value": 22000,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 21H2"
+      },
+      {
+        "date": "2022-09-20",
+        "version": "22621",
+        "value": 22621,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 22H2"
+      },
+      {
+        "date": "2023-10-31",
+        "version": "22631",
+        "value": 22631,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 23H2"
+      },
+      {
+        "date": "2024-10-01",
+        "version": "26100",
+        "value": 26100,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 24H2"
+      },
+      {
+        "date": "2025-09-30",
+        "version": "26200",
+        "value": 26200,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 25H2"
+      },
+      {
+        "date": "2026-09-29",
+        "version": "26300",
+        "value": 26300,
+        "source": "https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information",
+        "releaseKind": "stable",
+        "relatedVersion": "Windows 11 26H2"
+      }
+    ]
+  }
+]

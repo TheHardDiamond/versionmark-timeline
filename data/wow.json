@@ -1,0 +1,62 @@
+[
+  {
+    "id": "wow",
+    "name": "魔兽世界",
+    "category": "games",
+    "metric": "version",
+    "updatedAt": "2026-11-17",
+    "description": "现代版内容补丁的主次编号，采用北美正式服维护上线日；不混入怀旧服或资料片开服日期。",
+    "coverage": "精选可核实的版本里程碑，更新至 12.1.5。",
+    "points": [
+      {
+        "date": "2023-11-07",
+        "version": "10.2",
+        "value": 10.2,
+        "source": "https://news.blizzard.com/en-us/article/24020034/updated-nov-7-dragonflight-guardians-of-the-dream-content-update-notesnow-live",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-07-23",
+        "version": "11.0",
+        "value": 11,
+        "source": "https://news.blizzard.com/en-us/article/24115320/twiw-the-war-within-pre-expansion-is-now-live-season-of-discovery-phase-4-and-more",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-02-25",
+        "version": "11.1",
+        "value": 11.1,
+        "source": "https://news.blizzard.com/en-us/article/24177507/wow-weekly-the-undermine-d-content-update-and-more",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-03-02",
+        "version": "12.0",
+        "value": 12,
+        "source": "https://worldofwarcraft.blizzard.com/en-us/news/24243639/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-04-21",
+        "version": "12.0.5",
+        "value": 12,
+        "source": "https://worldofwarcraft.blizzard.com/en-us/news/24272606",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-08-11",
+        "version": "12.1",
+        "value": 12.1,
+        "source": "https://worldofwarcraft.blizzard.com/en-us/news/24294370/curse-of-ulatek-goes-live-12-august-journey-to-the-coiled-isle",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-10-13",
+        "version": "12.1.5",
+        "value": 12.1,
+        "source": "https://worldofwarcraft.blizzard.com/en-us/news/24307306",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

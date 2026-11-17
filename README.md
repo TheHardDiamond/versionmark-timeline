@@ -9,7 +9,11 @@
 - **加自己的线。** 用 [CSV 示例](public/example.csv) 在浏览器临时加载数据。每条临时线带星号，刷新后清除。
 - **导出图表。** 可自定义标题、显示节点数值，选择横版或竖版 PNG / SVG。导出会保留临时曲线的星号和声明。
 
-[提交公共数据](https://github.com/TheHardDiamond/versionmark-timeline/issues/new?template=timeline.yml)
+[投稿新曲线](https://github.com/TheHardDiamond/versionmark-timeline/issues/new?template=timeline.yml) · [更新已有曲线](https://github.com/TheHardDiamond/versionmark-timeline/issues/new?template=update.yml)
+
+## 数据位置
+
+[data/](data/) 是网页正式数据的来源。每条曲线单独存放在 `data/<曲线ID>.json`，例如 [原神](data/genshin.json)、[Minecraft Java](data/minecraft.json) 和 [GPT](data/gpt.json)。文件里包含版本、日期、绘图值和可核实来源。
 
 ## 本地运行
 
@@ -35,3 +39,9 @@ npm run import:csv -- timeline.csv issue-42 "产品名" games https://example.or
 ```
 
 将生成的 JSON 加到 PR 后走同一审核流程。
+
+发现漏更或错误时，使用「更新已有曲线」Issue。可以直接写版本、日期和来源，也可以附 CSV。核对来源后，维护者在数据 PR 中修改该曲线原有的 JSON 文件，合并后 Pages 会重新构建。普通版本号曲线的 CSV 可用下面的命令合并。同名版本会更新日期和来源，新版本会追加；改名或采用特殊取值规则的节点直接编辑 JSON。
+
+```sh
+npm run update:csv -- update.csv genshin
+```

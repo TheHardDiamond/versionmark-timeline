@@ -1,0 +1,76 @@
+[
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "category": "ai",
+    "metric": "version",
+    "description": "Gemini 通用模型主次编号；以官方首次公告日期为准，实验或受限预览明确标记，不混入 Gemma 与图像独立编号。",
+    "coverage": "精选 2023-12-06 至 2026-09-30 的首次编号公告；同编号 Pro、Flash、Argon、Carbon、Hydrogen 等档位不重复铺点，未穷举所有实验快照。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2023-12-06",
+        "version": "Gemini 1.0",
+        "value": 1,
+        "source": "https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-02-15",
+        "version": "Gemini 1.5 Pro",
+        "value": 1.5,
+        "source": "https://blog.google/innovation-and-ai/products/google-gemini-next-generation-model-february-2024/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2024-12-11",
+        "version": "Gemini 2.0 Flash Experimental",
+        "value": 2,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-ai-update-december-2024/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-03-25",
+        "version": "Gemini 2.5 Pro Experimental",
+        "value": 2.5,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-model-thinking-updates-march-2025/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-11-18",
+        "version": "Gemini 3 Pro",
+        "value": 3,
+        "source": "https://blog.google/products-and-platforms/products/gemini/gemini-3/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-02-19",
+        "version": "Gemini 3.1 Pro",
+        "value": 3.1,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-05-19",
+        "version": "Gemini 3.5 Flash",
+        "value": 3.5,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-07-21",
+        "version": "Gemini 3.6 Flash",
+        "value": 3.6,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-30",
+        "version": "Gemini 4 Argon",
+        "value": 4,
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "releaseKind": "preview"
+      }
+    ]
+  }
+]

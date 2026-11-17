@@ -28,7 +28,7 @@ app.innerHTML = `<header><a href="${REPO_URL}">↗ GitHub</a><h1 id="page-title"
 <main><details open><summary>曲线与数据</summary><input id="search" type="search" placeholder="搜索曲线" aria-label="搜索曲线">
 <div class="tools"><button id="classic">原版九条</button><button id="all">全部扩展</button><button id="mc">Minecraft 专场</button><button id="clear">清空</button></div>
 <div id="series"></div><label class="file">临时加载 CSV<input id="csv" type="file" accept=".csv" multiple></label>
-<p class="small">仅本次页面有效，刷新后清除。<a href="${import.meta.env.BASE_URL}example.csv" download>下载示例</a></p><p role="status" id="status"></p><a href="${REPO_URL}/issues/new?template=timeline.yml">投稿公共数据 ↗</a></details>
+<p class="small">仅本次页面有效，刷新后清除。<a href="${import.meta.env.BASE_URL}example.csv" download>下载示例</a></p><p role="status" id="status"></p><div class="tools"><a href="${REPO_URL}/issues/new?template=timeline.yml">投稿新曲线 ↗</a><a href="${REPO_URL}/issues/new?template=update.yml">更新已有曲线 ↗</a></div></details>
 <section><div class="tools"><label>图表标题 <input id="chart-title" type="text" maxlength="80" placeholder="Versionmark Timeline"></label><label><input id="axis" type="checkbox" checked> 自动断轴</label><label><input id="point-values" type="checkbox"> 显示节点数值</label><button id="export">导出图表</button></div>
 <div id="chart" aria-label="版本号时间线"></div><p id="foot"></p><p id="point" aria-live="polite">点击节点查看发布来源。</p></section></main>
 <dialog id="export-dialog"><form method="dialog"><button aria-label="关闭">关闭</button></form><h2>导出图表</h2>

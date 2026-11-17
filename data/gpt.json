@@ -1,0 +1,118 @@
+[
+  {
+    "id": "gpt",
+    "name": "GPT",
+    "category": "ai",
+    "metric": "version",
+    "description": "GPT 数字版本；4o 按 4 绘制，4.5 之后发布的 4.1 会下降。日期采用官方研究或产品公告日，不是模型训练完成日。",
+    "coverage": "精选已核实里程碑，2019-02-14 至 2026-09-29；未将初代未编号 GPT 补造为 1.0，不含 o 系列、Codex 专用版本和全部小型分支。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2019-02-14",
+        "version": "GPT-2",
+        "value": 2,
+        "source": "https://openai.com/index/better-language-models/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2020-05-28",
+        "version": "GPT-3",
+        "value": 3,
+        "source": "https://openai.com/index/language-models-are-few-shot-learners/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2022-11-30",
+        "version": "GPT-3.5 (ChatGPT preview)",
+        "value": 3.5,
+        "source": "https://openai.com/index/chatgpt/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2023-03-14",
+        "version": "GPT-4",
+        "value": 4,
+        "source": "https://openai.com/index/gpt-4/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-05-13",
+        "version": "GPT-4o",
+        "value": 4,
+        "source": "https://openai.com/index/hello-gpt-4o/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-02-27",
+        "version": "GPT-4.5",
+        "value": 4.5,
+        "source": "https://openai.com/index/introducing-gpt-4-5/",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-04-14",
+        "version": "GPT-4.1",
+        "value": 4.1,
+        "source": "https://openai.com/index/gpt-4-1/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-08-07",
+        "version": "GPT-5",
+        "value": 5,
+        "source": "https://openai.com/index/introducing-gpt-5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-11-12",
+        "version": "GPT-5.1",
+        "value": 5.1,
+        "source": "https://openai.com/index/gpt-5-1/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-12-11",
+        "version": "GPT-5.2",
+        "value": 5.2,
+        "source": "https://openai.com/index/introducing-gpt-5-2/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-03-05",
+        "version": "GPT-5.4",
+        "value": 5.4,
+        "source": "https://openai.com/index/introducing-gpt-5-4/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-04-23",
+        "version": "GPT-5.5",
+        "value": 5.5,
+        "source": "https://openai.com/index/introducing-gpt-5-5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-07-09",
+        "version": "GPT-5.6",
+        "value": 5.6,
+        "source": "https://openai.com/index/gpt-5-6/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-03",
+        "version": "GPT-6 Astra",
+        "value": 6,
+        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2026-09-29",
+        "version": "GPT-6.1 Sol",
+        "value": 6.1,
+        "source": "https://deploymentsafety.openai.com/gpt-6-1-sol",
+        "releaseKind": "announcement"
+      }
+    ]
+  }
+]

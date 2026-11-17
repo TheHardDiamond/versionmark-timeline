@@ -1,0 +1,19 @@
+name: 更新现有曲线
+description: 补充遗漏的版本或纠正已有节点，支持文字和 CSV
+title: "[数据更新] "
+body:
+  - type: input
+    id: series
+    attributes:
+      label: 曲线 ID
+      description: 填写 data/ 下的文件名，去掉 .json。例如 genshin。
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: 建议更新
+      description: 写明新增或更正的版本、发布日期和来源。也可以附 CSV。如果修正版本名，请同时写出旧名称。
+      placeholder: 2026-11-04，7.2，https://genshin.hoyoverse.com/en/news/detail/167131
+    validations:
+      required: true

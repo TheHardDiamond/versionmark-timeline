@@ -1,0 +1,69 @@
+[
+  {
+    "id": "grok",
+    "name": "Grok",
+    "category": "ai",
+    "metric": "version",
+    "description": "Grok 通用模型数字编号；日期取官方公告页，Beta 标明为预览。未混入 Imagine、Voice 和 Code Fast 等独立系列。",
+    "coverage": "精选官方可核实里程碑，2023-11-03 至 2026-09-21；未穷举 4.x 中间版本、Fast 变体和 API 更新日期。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2023-11-03",
+        "version": "Grok-1",
+        "value": 1,
+        "source": "https://x.ai/news/grok",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2024-03-28",
+        "version": "Grok-1.5",
+        "value": 1.5,
+        "source": "https://x.ai/news/grok-1.5",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2024-08-13",
+        "version": "Grok-2 Beta",
+        "value": 2,
+        "source": "https://x.ai/news/grok-2",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-02-19",
+        "version": "Grok 3 Beta",
+        "value": 3,
+        "source": "https://x.ai/news/grok-3",
+        "releaseKind": "preview"
+      },
+      {
+        "date": "2025-07-09",
+        "version": "Grok 4",
+        "value": 4,
+        "source": "https://x.ai/news/grok-4",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-11-17",
+        "version": "Grok 4.1",
+        "value": 4.1,
+        "source": "https://x.ai/news/grok-4-1",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-08-12",
+        "version": "Grok 4.6",
+        "value": 4.6,
+        "source": "https://x.ai/news/grok-4-6",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-21",
+        "version": "Grok 4.7",
+        "value": 4.7,
+        "source": "https://x.ai/news/grok-4-7",
+        "releaseKind": "announcement"
+      }
+    ]
+  }
+]

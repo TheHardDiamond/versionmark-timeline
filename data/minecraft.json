@@ -1,0 +1,125 @@
+[
+  {
+    "id": "minecraft",
+    "name": "Minecraft Java",
+    "category": "games",
+    "metric": "version",
+    "updatedAt": "2026-11-16",
+    "description": "Java Edition 正式发布版本；主次编号按小数绘图，所以 1.10 会低于 1.9。",
+    "coverage": "2011–2026 已核实的正式发布里程碑；省略多数补丁。旧版本使用官方发布清单，已知构建日期与正式上线不一致的版本使用发布公告。",
+    "points": [
+      {
+        "date": "2011-11-18",
+        "version": "1.0",
+        "value": 1,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2014-09-02",
+        "version": "1.8",
+        "value": 1.8,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-02-29",
+        "version": "1.9",
+        "value": 1.9,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-06-08",
+        "version": "1.10",
+        "value": 1.1,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-11-14",
+        "version": "1.11",
+        "value": 1.11,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2018-07-18",
+        "version": "1.13",
+        "value": 1.13,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-04-23",
+        "version": "1.14",
+        "value": 1.14,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-12-10",
+        "version": "1.15",
+        "value": 1.15,
+        "source": "https://www.minecraft.net/en-us/article/minecraft-1-15-pre-release-1",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-06-23",
+        "version": "1.16",
+        "value": 1.16,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-06-08",
+        "version": "1.17",
+        "value": 1.17,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-11-30",
+        "version": "1.18",
+        "value": 1.18,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-06-07",
+        "version": "1.19",
+        "value": 1.19,
+        "source": "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2023-06-07",
+        "version": "1.20",
+        "value": 1.2,
+        "source": "https://www.minecraft.net/de-de/article/trails-tales-update-coming",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-06-13",
+        "version": "1.21",
+        "value": 1.21,
+        "source": "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-03-24",
+        "version": "26.1",
+        "value": 26.1,
+        "source": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-1",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-09-15",
+        "version": "26.3",
+        "value": 26.3,
+        "source": "https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

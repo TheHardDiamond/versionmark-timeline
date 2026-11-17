@@ -10,6 +10,7 @@
     "test": "tsx --test tests/*.test.ts",
     "validate:data": "tsx scripts/validate-data.ts",
     "import:csv": "tsx scripts/import-csv.ts",
+    "update:csv": "tsx scripts/update-csv.ts",
     "import:issue": "tsx scripts/import-issue.ts"
   },
   "dependencies": { "echarts": "^6.0.0", "papaparse": "^5.5.3" },

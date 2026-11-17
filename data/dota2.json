@@ -1,0 +1,55 @@
+[
+  {
+    "id": "dota2",
+    "name": "Dota 2",
+    "category": "games",
+    "metric": "version",
+    "updatedAt": "2026-11-17",
+    "description": "Gameplay Update 编号；日期按 Valve 在 Steam 发布上线公告的页面日期。",
+    "coverage": "精选可核实的版本里程碑，更新至 7.41f。",
+    "points": [
+      {
+        "date": "2023-04-20",
+        "version": "7.33",
+        "value": 7.33,
+        "source": "https://store.steampowered.com/news/posts/?appids=570&enddate=1682470298",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-05-22",
+        "version": "7.36",
+        "value": 7.36,
+        "source": "https://store.steampowered.com/news/posts/?appids=570&enddate=1717798601",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-02-18",
+        "version": "7.38",
+        "value": 7.38,
+        "source": "https://store.steampowered.com/news/posts/?appids=570&enddate=1742420031",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-12-16",
+        "version": "7.40",
+        "value": 7.4,
+        "source": "https://www.dota2.com/news",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-03-24",
+        "version": "7.41",
+        "value": 7.41,
+        "source": "https://www.dota2.com/news",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-09-15",
+        "version": "7.41f",
+        "value": 7.41,
+        "source": "https://www.dota2.com/newsentry/677383425371407609?l=english",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

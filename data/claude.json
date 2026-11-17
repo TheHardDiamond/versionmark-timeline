@@ -1,0 +1,111 @@
+[
+  {
+    "id": "claude",
+    "name": "Claude",
+    "category": "ai",
+    "metric": "version",
+    "description": "Claude 家族数字编号；同一编号取已核实的最早家族公告，保留具体型号。不同子系列的编号可能交错，曲线不是能力前沿。",
+    "coverage": "精选已核实里程碑，2023-07-11 至 2026-11-09；未为最初未编号的 Claude 补造 1.0，未穷举 Instant、Haiku 等分支；日期按链接页面刊载日。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2023-07-11",
+        "version": "Claude 2",
+        "value": 2,
+        "source": "https://www.anthropic.com/news/claude-2",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2023-11-21",
+        "version": "Claude 2.1",
+        "value": 2.1,
+        "source": "https://www.anthropic.com/news/claude-2-1",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-03-04",
+        "version": "Claude 3",
+        "value": 3,
+        "source": "https://www.anthropic.com/news/claude-3-family",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-06-21",
+        "version": "Claude 3.5 Sonnet",
+        "value": 3.5,
+        "source": "https://www.anthropic.com/news/claude-3-5-sonnet",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-02-24",
+        "version": "Claude 3.7 Sonnet",
+        "value": 3.7,
+        "source": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-05-22",
+        "version": "Claude 4",
+        "value": 4,
+        "source": "https://www.anthropic.com/news/claude-4",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-08-05",
+        "version": "Claude Opus 4.1",
+        "value": 4.1,
+        "source": "https://www.anthropic.com/news/claude-opus-4-1",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-09-29",
+        "version": "Claude Sonnet 4.5",
+        "value": 4.5,
+        "source": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-02-05",
+        "version": "Claude Opus 4.6",
+        "value": 4.6,
+        "source": "https://www.anthropic.com/news/claude-opus-4-6",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-04-16",
+        "version": "Claude Opus 4.7",
+        "value": 4.7,
+        "source": "https://www.anthropic.com/news/claude-opus-4-7",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-05-28",
+        "version": "Claude Opus 4.8",
+        "value": 4.8,
+        "source": "https://www.anthropic.com/news/claude-opus-4-8",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-06-09",
+        "version": "Claude Fable / Mythos 5",
+        "value": 5,
+        "source": "https://www.anthropic.com/news/models",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-09-22",
+        "version": "Claude Opus 5.5",
+        "value": 5.5,
+        "source": "https://www.anthropic.com/claude-opus-5-5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-11-09",
+        "version": "Claude Fable / Mythos 5.2",
+        "value": 5.2,
+        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "releaseKind": "announcement"
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "fortnite",
+    "name": "Fortnite",
+    "category": "games",
+    "metric": "version",
+    "updatedAt": "2026-11-17",
+    "description": "Fortnite 生态更新编号，不是赛季序号；日期取补丁实际发布日。",
+    "coverage": "精选可核实的版本里程碑，更新至 43.10。",
+    "points": [
+      {
+        "date": "2023-06-09",
+        "version": "25.00",
+        "value": 25,
+        "source": "https://www.fortnite.com/news/fortnite-ecosystem-patch-notes-v25-00-update",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-05-24",
+        "version": "30.00",
+        "value": 30,
+        "source": "https://www.fortnite.com/news/fortnite-festival-pro-lead-and-pro-bass-updates-in-v30-00",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-05-02",
+        "version": "35.00",
+        "value": 35,
+        "source": "https://www.fortnite.com/news/fortnite-ecosystem-v34-40",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-03-19",
+        "version": "40.00",
+        "value": 40,
+        "source": "https://dev.epicgames.com/documentation/en-us/fortnite/40-00-fortnite-ecosystem-updates-and-release-notes",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-06-25",
+        "version": "41.10",
+        "value": 41.1,
+        "source": "https://dev.epicgames.com/documentation/en-us/fortnite/whats-new-in-unreal-editor-for-fortnite",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-08-20",
+        "version": "42.00",
+        "value": 42,
+        "source": "https://dev.epicgames.com/documentation/en-us/fortnite/42-00-fortnite-ecosystem-updates-and-release-notes",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-11-01",
+        "version": "43.00",
+        "value": 43,
+        "source": "https://dev.epicgames.com/documentation/fortnite/43-00-fortnite-ecosystem-updates-and-release-notes",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-11-12",
+        "version": "43.10",
+        "value": 43.1,
+        "source": "https://dev.epicgames.com/documentation/en-us/fortnite/43-10-fortnite-ecosystem-updates-and-release-notes",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

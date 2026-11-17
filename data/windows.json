@@ -1,0 +1,62 @@
+[
+  {
+    "id": "windows",
+    "name": "Windows 产品编号",
+    "category": "os",
+    "metric": "version",
+    "description": "取 Windows 产品名称中的数字；2000 是产品名，不是性能得分。XP、Vista、Me 等无数字名称不强行映射。",
+    "coverage": "精选 Windows 98 至 Windows 11 的正式产品节点，含 8.1；不包含 Server、NT、补丁或 Insider。日期为公开上市/上线日期。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "1998-06-25",
+        "version": "Windows 98",
+        "value": 98,
+        "source": "https://news.microsoft.com/source/1998/06/25/microsoft-announces-immediate-availability-of-windows-98-in-more-than-40-countries/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2000-02-17",
+        "version": "Windows 2000",
+        "value": 2000,
+        "source": "https://news.microsoft.com/source/2000/02/17/gates-ushers-in-next-generation-of-pc-computing-with-launch-of-windows-2000/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2009-10-22",
+        "version": "Windows 7",
+        "value": 7,
+        "source": "https://news.microsoft.com/source/2009/10/22/microsoft-simplifies-the-pc-with-windows-7/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2012-10-26",
+        "version": "Windows 8",
+        "value": 8,
+        "source": "https://news.microsoft.com/source/2012/10/18/microsoft-reports-first-quarter-results/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2013-10-17",
+        "version": "Windows 8.1",
+        "value": 8.1,
+        "source": "https://blogs.windows.com/windowsexperience/2013/10/17/windows-8-1-now-available/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2015-07-29",
+        "version": "Windows 10",
+        "value": 10,
+        "source": "https://blogs.windows.com/windowsdeveloper/2015/07/29/its-time-to-upgrade-your-world-and-your-apps/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-10-05",
+        "version": "Windows 11",
+        "value": 11,
+        "source": "https://blogs.windows.com/windowsexperience/2021/08/31/windows-11-available-on-october-5/",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

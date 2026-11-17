@@ -1,0 +1,76 @@
+[
+  {
+    "id": "warframe",
+    "name": "Warframe",
+    "category": "games",
+    "metric": "version",
+    "updatedAt": "2026-11-17",
+    "description": "PC 主更新编号；日期采用正式补丁发布日，不使用宣传片发布日期。",
+    "coverage": "精选可核实的版本里程碑，更新至 44.1。",
+    "points": [
+      {
+        "date": "2023-10-18",
+        "version": "34.0",
+        "value": 34,
+        "source": "https://forums.warframe.com/topic/1368153-abyss-of-dagath-update-34/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2023-12-13",
+        "version": "35.0",
+        "value": 35,
+        "source": "https://forums.warframe.com/topic/1374382-update-35-whispers-in-the-walls/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-06-18",
+        "version": "36.0",
+        "value": 36,
+        "source": "https://forums.warframe.com/topic/1400340-psn-update-36-jade-shadows/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-10-02",
+        "version": "37.0",
+        "value": 37,
+        "source": "https://forums.warframe.com/topic/1414770-update-37-koumei-the-five-fates/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-12-13",
+        "version": "38.0",
+        "value": 38,
+        "source": "https://www.warframe.com/uk/patch-notes/pc/38-0-0",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-03-26",
+        "version": "42.0",
+        "value": 42,
+        "source": "https://www.warframe.com/en/patch-notes/pc/42-0-0",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-06-17",
+        "version": "43.0",
+        "value": 43,
+        "source": "https://www.warframe.com/en/patch-notes/pc/43-0-0",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-09-23",
+        "version": "44.0",
+        "value": 44,
+        "source": "https://www.warframe.com/en/patch-notes/pc/44-0-0",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-10-07",
+        "version": "44.1",
+        "value": 44.1,
+        "source": "https://www.warframe.com/en/patch-notes/psn/44-1-0",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

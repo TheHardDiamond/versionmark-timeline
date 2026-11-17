@@ -1,0 +1,104 @@
+[
+  {
+    "id": "iphone",
+    "name": "iPhone",
+    "category": "hardware",
+    "metric": "model",
+    "description": "取带数字的标准款型号；iPhone X 的罗马数字 X 显式映射为 10。日期使用首批市场发售日。",
+    "coverage": "iPhone 4–17 的编号标准款（没有 iPhone 9）；不另收 S、C、SE、XS、XR、mini、Plus、Pro、Air 或 Duo。最新核实标准款为 iPhone 17，不能用 Pro 18 代替。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2010-06-24",
+        "version": "iPhone 4",
+        "value": 4,
+        "source": "https://www.apple.com/newsroom/2010/06/07Apple-Presents-iPhone-4/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2012-09-21",
+        "version": "iPhone 5",
+        "value": 5,
+        "source": "https://www.apple.com/newsroom/2012/09/12Apple-Introduces-iPhone-5/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2014-09-19",
+        "version": "iPhone 6",
+        "value": 6,
+        "source": "https://www.apple.com/newsroom/2014/09/09Apple-Announces-iPhone-6-iPhone-6-Plus-The-Biggest-Advancements-in-iPhone-History/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-09-16",
+        "version": "iPhone 7",
+        "value": 7,
+        "source": "https://www.apple.com/newsroom/2016/09/apple-introduces-iphone-7-iphone-7-plus/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-09-22",
+        "version": "iPhone 8",
+        "value": 8,
+        "source": "https://www.apple.com/newsroom/2017/09/iphone-8-and-iphone-8-plus-now-available/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-11-03",
+        "version": "iPhone X",
+        "value": 10,
+        "source": "https://www.apple.com/newsroom/2017/11/iphone-x-arriving-in-stores-around-the-world/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-09-20",
+        "version": "iPhone 11",
+        "value": 11,
+        "source": "https://www.apple.com/newsroom/2019/09/apple-introduces-dual-camera-iphone-11/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-10-23",
+        "version": "iPhone 12",
+        "value": 12,
+        "source": "https://www.apple.com/newsroom/2020/10/iphone-12-iphone-12-pro-and-ipad-air-are-here/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-09-24",
+        "version": "iPhone 13",
+        "value": 13,
+        "source": "https://www.apple.com/newsroom/2021/09/iphone-13-lineup-new-ipad-mini-and-ninth-generation-ipad-arrive-worldwide/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-09-16",
+        "version": "iPhone 14",
+        "value": 14,
+        "source": "https://www.apple.com/newsroom/2022/09/iphone-14-lineup-apple-watch-series-8-and-new-apple-watch-se-arrive-worldwide/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2023-09-22",
+        "version": "iPhone 15",
+        "value": 15,
+        "source": "https://www.apple.com/newsroom/2023/09/iphone-15-lineup-and-new-apple-watch-lineup-arrive-worldwide/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-09-20",
+        "version": "iPhone 16",
+        "value": 16,
+        "source": "https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-09-19",
+        "version": "iPhone 17",
+        "value": 17,
+        "source": "https://www.apple.com/newsroom/2025/09/apple-debuts-iphone-17/",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "glm",
+    "name": "GLM",
+    "category": "ai",
+    "metric": "version",
+    "description": "GLM 通用模型编号；不把 130B、9B 等参数量当作版本号。首版以有明确官方日期的 4.5 及以后系列为主。",
+    "coverage": "已核实 2025-07-28 至 2026-08-18 的主次版本；ChatGLM2/3 和早期 GLM-4 的首次公告日尚待补充一手来源，未推测日期。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2025-07-28",
+        "version": "GLM-4.5",
+        "value": 4.5,
+        "source": "https://z.ai/blog/glm-4.5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-09-30",
+        "version": "GLM-4.6",
+        "value": 4.6,
+        "source": "https://z.ai/blog/glm-4.6",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-12-22",
+        "version": "GLM-4.7",
+        "value": 4.7,
+        "source": "https://docs.z.ai/release-notes/new-released",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-02-12",
+        "version": "GLM-5",
+        "value": 5,
+        "source": "https://z.ai/blog/glm-5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-04-07",
+        "version": "GLM-5.1",
+        "value": 5.1,
+        "source": "https://docs.z.ai/release-notes/new-released",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-06-16",
+        "version": "GLM-5.2",
+        "value": 5.2,
+        "source": "https://z.ai/blog/glm-5.2",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-08-18",
+        "version": "GLM-5.3",
+        "value": 5.3,
+        "source": "https://docs.z.ai/release-notes/new-released",
+        "releaseKind": "announcement"
+      }
+    ]
+  }
+]

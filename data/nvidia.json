@@ -1,0 +1,69 @@
+[
+  {
+    "id": "nvidia",
+    "name": "NVIDIA GeForce",
+    "category": "hardware",
+    "metric": "model",
+    "description": "精选消费级桌面系列首发阵容的最高档型号，纵轴为型号数字；排除 TITAN、专业卡和后续刷新款。2080 Ti 属于首发阵容，故保留。",
+    "coverage": "覆盖 GTX 600、700、900、1000 和 RTX 20、30、40、50 系列首发旗舰；不包含 2012 年以前产品。GTX 980 按美国官方现货公告日 2014-09-18 记录。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2012-03-22",
+        "version": "GTX 680",
+        "value": 680,
+        "source": "https://nvidianews.nvidia.com/news/nvidia-launches-first-geforce-gpus-based-on-next-generation-kepler-architecture",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2013-05-23",
+        "version": "GTX 780",
+        "value": 780,
+        "source": "https://nvidianews.nvidia.com/news/new-nvidia-geforce-gtx-780-gpu-leads-the-industry-with-the-fastest-frame-rates-and-super-smooth-animation-for-next-generation-gaming",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2014-09-18",
+        "version": "GTX 980",
+        "value": 980,
+        "source": "https://nvidianews.nvidia.com/news/nvidia-unveils-full-power-of-maxwell-gpu-architecture-with-breakthroughs-in-performance-graphics-efficiency-6622538",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-05-27",
+        "version": "GTX 1080",
+        "value": 1080,
+        "source": "https://nvidianews.nvidia.com/news/a-quantum-leap-in-gaming%3A-nvidia-introduces-geforce-gtx-1080",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2018-09-27",
+        "version": "RTX 2080 Ti",
+        "value": 2080,
+        "source": "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-2080-ti-reviews/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-09-24",
+        "version": "RTX 3090",
+        "value": 3090,
+        "source": "https://www.nvidia.com/en-us/geforce/news/introducing-rtx-30-series-graphics-cards/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-10-12",
+        "version": "RTX 4090",
+        "value": 4090,
+        "source": "https://www.nvidia.com/en-us/geforce/news/geforce-rtx-4090-out-now/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-01-30",
+        "version": "RTX 5090",
+        "value": 5090,
+        "source": "https://www.nvidia.com/en-eu/geforce/news/rtx-5090-5080-out-now/",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

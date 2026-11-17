@@ -1,0 +1,111 @@
+[
+  {
+    "id": "ios",
+    "name": "iOS",
+    "category": "os",
+    "metric": "version",
+    "description": "iOS 年度主版本号；使用正式更新开放日，不使用 WWDC 预告或测试版日期。",
+    "coverage": "iOS 7–18、26、27 的年度正式主版本；编号由 18 跳至 26，不补造 19–25；不含小版本和安全补丁。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2013-09-18",
+        "version": "iOS 7",
+        "value": 7,
+        "source": "https://www.apple.com/om/newsroom/2013/09/10iOS-7-With-Completely-Redesigned-User-Interface-Great-New-Features-Available-September-18/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2014-09-17",
+        "version": "iOS 8",
+        "value": 8,
+        "source": "https://www.apple.com/newsroom/2014/09/09Apple-Announces-iOS-8-Available-September-17/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2015-09-16",
+        "version": "iOS 9",
+        "value": 9,
+        "source": "https://www.apple.com/newsroom/2015/09/09iOS-9-Available-as-a-Free-Update-for-iPhone-iPad-iPod-touch-Users-September-16/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-09-13",
+        "version": "iOS 10",
+        "value": 10,
+        "source": "https://www.apple.com/newsroom/2016/09/whats-new-in-ios-10/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-09-19",
+        "version": "iOS 11",
+        "value": 11,
+        "source": "https://support.apple.com/en-ca/103804",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2018-09-17",
+        "version": "iOS 12",
+        "value": 12,
+        "source": "https://www.apple.com/newsroom/2018/09/ios-12-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-09-19",
+        "version": "iOS 13",
+        "value": 13,
+        "source": "https://support.apple.com/en-la/103106",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-09-16",
+        "version": "iOS 14",
+        "value": 14,
+        "source": "https://www.apple.com/newsroom/2020/09/ios-14-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2021-09-20",
+        "version": "iOS 15",
+        "value": 15,
+        "source": "https://www.apple.com/newsroom/2021/09/ios-15-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-09-12",
+        "version": "iOS 16",
+        "value": 16,
+        "source": "https://www.apple.com/newsroom/2022/09/ios-16-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2023-09-18",
+        "version": "iOS 17",
+        "value": 17,
+        "source": "https://www.apple.com/newsroom/2023/09/ios-17-is-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2024-09-16",
+        "version": "iOS 18",
+        "value": 18,
+        "source": "https://www.apple.com/newsroom/2024/09/ios-18-is-available-today-making-iphone-more-personal-and-capable-than-ever/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-09-15",
+        "version": "iOS 26",
+        "value": 26,
+        "source": "https://www.apple.com/newsroom/2025/09/new-versions-of-apples-software-platforms-are-available-today/",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2026-09-14",
+        "version": "iOS 27",
+        "value": 27,
+        "source": "https://www.apple.com/newsroom/2026/09/major-updates-for-apples-software-platforms-are-now-available/",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]

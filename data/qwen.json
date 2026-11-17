@@ -1,0 +1,62 @@
+[
+  {
+    "id": "qwen",
+    "name": "Qwen",
+    "category": "ai",
+    "metric": "version",
+    "description": "Qwen 通用模型的主次编号；模型参数量和日期后缀不作为版本。包含 Max 的新编号代际，不混入 QwQ 或图像独立系列。",
+    "coverage": "精选 2024-02-04 至 2026-11-16 的编号代际；未为原始 Qwen 补造 1.0，不穷举参数规模、专用分支和中间更新。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2024-02-04",
+        "version": "Qwen1.5",
+        "value": 1.5,
+        "source": "https://qwenlm.github.io/blog/qwen1.5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-06-07",
+        "version": "Qwen2",
+        "value": 2,
+        "source": "https://qwenlm.github.io/blog/qwen2/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2024-09-19",
+        "version": "Qwen2.5",
+        "value": 2.5,
+        "source": "https://qwenlm.github.io/blog/qwen2.5/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2025-04-29",
+        "version": "Qwen3",
+        "value": 3,
+        "source": "https://qwenlm.github.io/blog/qwen3/",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-02-15",
+        "version": "Qwen3.5",
+        "value": 3.5,
+        "source": "https://qwen.ai/blog?id=qwen3.5",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-08-03",
+        "version": "Qwen3.8-Max",
+        "value": 3.8,
+        "source": "https://qwen.ai/blog?id=qwen3.8",
+        "releaseKind": "announcement"
+      },
+      {
+        "date": "2026-11-16",
+        "version": "Qwen4-Max",
+        "value": 4,
+        "source": "https://qwen.ai/",
+        "releaseKind": "announcement"
+      }
+    ]
+  }
+]

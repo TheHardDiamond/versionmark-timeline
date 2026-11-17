@@ -1,0 +1,69 @@
+[
+  {
+    "id": "amd",
+    "name": "AMD Radeon",
+    "category": "hardware",
+    "metric": "model",
+    "description": "精选消费级桌面系列首发阵容的最高档单 GPU 型号；取具体型号数字（R9 290X 取 290，RX Vega 64 取 64），不取 R9 系列前缀。",
+    "coverage": "精选 HD 7000、R9 200、RX 400、Vega、RX 5000/6000/7000/9000 系列的首发旗舰里程碑；不是完整产品史。省略无普通数字编号的 Fury、VII，以及后续刷新和多 GPU 卡。",
+    "updatedAt": "2026-11-16",
+    "points": [
+      {
+        "date": "2012-01-09",
+        "version": "HD 7970",
+        "value": 7970,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/201/amd-launches-worlds-fastest-single-gpu-graphics-card----the-amd-radeontm-hd-7970",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2013-10-24",
+        "version": "R9 290X",
+        "value": 290,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/452/amd-radeon-r9-290x-graphics-card-pioneers-a-new-era-in-gaming-experience",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2016-06-29",
+        "version": "RX 480",
+        "value": 480,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/695/amd-launches-the-radeon-rebellion-with-the-radeontm-rx-480-graphics-card-available-now",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2017-08-14",
+        "version": "RX Vega 64",
+        "value": 64,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/787/radeon-rx-vega-graphics-cards-and-radeon-packs-next-generation-enthusiast-gaming-available-now",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2019-07-07",
+        "version": "RX 5700 XT",
+        "value": 5700,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/899/amd-unleashes-ultimate-pc-gaming-platform-with-worldwide-availability-of-amd-radeon-rx-5700-series-graphics-cards-and-amd-ryzen-3000-series-desktop-processors",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2020-12-08",
+        "version": "RX 6900 XT",
+        "value": 6900,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/978/amd-unveils-next-generation-pc-gaming-with-amd-radeon-rx-6000-series-bringing-leadership-4k-resolution-performance-to-aaa-gaming",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2022-12-13",
+        "version": "RX 7900 XTX",
+        "value": 7900,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1099/amd-unveils-worlds-most-advanced-gaming-graphics-cards-built-on-groundbreaking-amd-rdna-3-architecture-with-chiplet-design",
+        "releaseKind": "stable"
+      },
+      {
+        "date": "2025-03-06",
+        "version": "RX 9070 XT",
+        "value": 9070,
+        "source": "https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-amd-radeon-rx-9000-series-graphics-cards",
+        "releaseKind": "stable"
+      }
+    ]
+  }
+]
